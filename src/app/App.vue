@@ -3,12 +3,12 @@
 -->
 
 <template>
-    
-    <div class="pb-20 pt-8">
-        <Workspace/>
-    </div>
 
-    <HelpContent/>
+    <HelpContent>
+
+        <Workspace/>
+
+    </HelpContent>
 
 </template>
 
