@@ -8,7 +8,7 @@ head:
 
 # ReplaceMe
 
-Welcome to the docs home page for the `ReplaceMe.vue` component!
+Welcome to the docs page for OBE:WDS's `ReplaceMe.vue` component for [Vue.js](https://vuejs.org/)!
 
 
 
@@ -27,11 +27,26 @@ npm install @obewds/replace-me --save-dev
 
 
 
+### Template syntax
+
+```html
+<template>
+
+    <ReplaceMe/>
+    
+</template>
+```
+
+
+
+
 ### Script setup syntax
 
 ```html
 <script setup>
+
     import ReplaceMe from '@obewds/replace-me'
+
 </script>
 ```
 
@@ -42,8 +57,6 @@ npm install @obewds/replace-me --save-dev
 
 ```html
 <script>
-
-    // SomeNewComponent.vue
 
     import { defineComponent } from 'vue'
     import ReplaceMe from '@obewds/replace-me'
