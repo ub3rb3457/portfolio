@@ -1,6 +1,6 @@
 {
   "name": "vite-vue-compo-pkg-starter",
-  "description": "The official OBE:WDS Vite/Vue component starter template with Tailwind CSS, VitePress, Vitest, and more.",
+  "description": "The official OBE:WDS Vite/Vue component package development kit with Tailwind CSS, VitePress and Vitest integrations",
   "version": "0.1.0",
   "author": "@oberocks",
   "homepage": "https://github.com/obewds/vite-vue-compo-pkg-starter#readme",
@@ -17,11 +17,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "rollup": "rollup -c",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "pkg:rollup": "rollup -c",
     "pkg:org": "npm config set scope obewds",
     "pkg:login": "npm adduser",
     "pkg:publish": "npm publish --access public",
-    "publish:prep": "npx rimraf dist && npm run rollup",
+    "publish:prep": "npx rimraf dist && npm run pkg:rollup",
     "publish:package": "npm run publish:prep && npm run pkg:org && npm run pkg:login && npm run pkg:publish"
   },
   "devDependencies": {
@@ -38,6 +41,7 @@
     "rollup-plugin-vue": "^6.0.0",
     "tailwindcss": "^3.0.24",
     "vite": "^2.9.2",
+    "vitepress": "^0.22.3",
     "vue": "^3.2.33"
   },
   "repository": {
@@ -49,9 +53,14 @@
   },
   "keywords": [
     "vue",
-    "vue3",
     "vite",
     "OBE:WDS",
-    "tailwindcss"
+    "tailwindcss",
+    "rollup",
+    "vitepress",
+    "postcss",
+    "vue3",
+    "Vue.js",
+    "Tailwind CSS"
   ]
 }

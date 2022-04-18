@@ -16,9 +16,9 @@
 
     <div :class="[flexColSect, 'pt-28']">
 
-        <h2 :class="h2Classes">Doing the Things</h2>
+        <h2 :class="h2Classes">DOING THE THINGS</h2>
 
-        <p class="py-2">
+        <p class="pb-2">
             <button
                 type="button"
                 :class="btnClasses"
@@ -29,44 +29,44 @@
             </button>
         </p>
 
-        <div v-if="showToDos">
+        <div v-if="showToDos" class="bg-gray-100 rounded-lg shadow-lg p-4 mx-4 text-left">
 
-            <ul>
+            <ol class="list-decimal">
                 <li>
-                    1. Find/Replace <code :class="codeClasses">vite-vue-compo-pkg-starter</code> in all repo code
+                    Find/Replace <code :class="codeClasses">vite-vue-compo-pkg-starter</code> in all repo code
                 </li>
                 <li>
-                    2. Find/Replace <code :class="codeClasses">ReplaceMe</code> in all repo filenames and code
+                    Find/Replace <code :class="codeClasses">ReplaceMe</code> in all repo filenames and code
                 </li>
                 <li>
-                    3. Use file formerly known as <code :class="codeClasses">ReplaceMe</code> to create a new component
+                    Use file formerly known as <code :class="codeClasses">ReplaceMe</code> to create a new component
                 </li>
                 <li>
-                    4. Use <a href="https://vitest.dev/" target="_blank" :style="linkStyle">Vitest</a> to create a <code :class="codeClasses">xxxx.test.js</code> file and fully test the new component
+                    Use <a href="https://vitest.dev/" target="_blank" :style="linkStyle">Vitest</a> to create a <code :class="codeClasses">xxxx.test.js</code> file and fully test the new component
                 </li>
                 <li>
-                    5. Use the npm script command <code :class="codeClasses">npm run publish:prep</code> to generate/check your component package files
+                    Use the npm script command <code :class="codeClasses">npm run publish:prep</code> to generate/check your component package files
                 </li>
                 <li>
-                    6. Double check your <code :class="codeClasses">package.json</code> file to ensure the package files can be consumed
+                    Double check your <code :class="codeClasses">package.json</code> file to ensure the package files can be consumed
                 </li>
                 <li>
-                    7. Use <a href="https://desktop.github.com/" target="_blank" :style="linkStyle">GitHub Desktop</a> to make a PR from your branch and merge it into the <code :class="codeClasses">main</code> branch
+                    Use <a href="https://desktop.github.com/" target="_blank" :style="linkStyle">GitHub Desktop</a> to make a PR from your branch and merge it into the <code :class="codeClasses">main</code> branch
                 </li>
                 <li>
-                    8. Use the npm script command <code :class="codeClasses">npm run publish:package</code> and follow the prompts to publish your new package files.
+                    Use the npm script command <code :class="codeClasses">npm run publish:package</code> and follow the prompts to publish your new package files.
                 </li>
-            </ul>
+            </ol>
 
         </div>    
 
     </div>
 
-    <div :class="[flexColSect, 'pb-20']">
+    <div :class="[flexColSect, 'pt-8 pb-20']">
 
-        <h2 :class="h2Classes">Read the Things</h2>
+        <h2 :class="h2Classes">READING THE THINGS</h2>
 
-        <p class="py-2">
+        <p class="pb-2">
             <button
                 type="button"
                 :class="btnClasses"
@@ -103,9 +103,9 @@
     
 
 
-        <h2 :class="[h2Classes, 'pt-6']">Reactive Thing</h2>
+        <h2 :class="[h2Classes, 'pt-6']">A REACTIVE THING</h2>
 
-        <p class="pt-2">
+        <p>
             <button
                 type="button"
                 :class="btnClasses"
@@ -128,39 +128,32 @@
 
     import { ref } from 'vue'
 
-    const more = 'more'
-    const less = 'less'
+    // setup static values
+    const more = 'more things'
+    const less = 'less things'
+    const linkStyle = 'color:#42b983;'
+    const codeClasses = 'bg-gray-200 px-1'
+    const imgClasses = 'w-24 mx-auto sm:mx-0'
+    const flexColSect = 'flex flex-col space-y-2'
+    const h2Classes = 'text-lg font-bold'
+    const btnClasses = 'inline text-white rounded px-2 py-1'
+    const btnStyle = 'background-color:#42b983;'
 
+    // setup reactive values
     const count = ref(0)
     const showDocs = ref(false)
     const showDocsBtnText = ref(more)
     const showToDos = ref(false)
     const showToDosBtnText = ref(more)
 
-    const linkStyle = 'color:#42b983;'
-    const codeClasses = 'bg-gray-200 px-1'
-    const imgClasses = 'w-24 mx-auto sm:mx-0'
-    const flexColSect = 'flex flex-col space-y-2 pt-8'
-    const h2Classes = 'text-2xl font-bold'
-    const btnClasses = 'inline text-white rounded px-2 py-1'
-    const btnStyle = 'background-color:#42b983;'
-
-
+    // setup interactive functionality
     function showDocsSection(event){
-
         showDocs.value = !showDocs.value
-
         showDocs.value === false ? showDocsBtnText.value = more : showDocsBtnText.value = less
-
     }
-
-
     function showToDosSection(event){
-
         showToDos.value = !showToDos.value
-
         showToDos.value === false ? showToDosBtnText.value = more : showToDosBtnText.value = less
-
     }
 
 </script>
