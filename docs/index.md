@@ -1,3 +1,11 @@
+---
+head:
+  - - link
+    - rel: icon
+      href: /favicon.ico
+---
+
+
 # ReplaceMe
 
 Welcome to the docs home page for the `ReplaceMe.vue` component!
