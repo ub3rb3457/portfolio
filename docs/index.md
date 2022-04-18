@@ -29,11 +29,11 @@ npm install @obewds/replace-me --save-dev
 
 ### Template syntax
 
-```html
+```html{3}
 <template>
 
     <ReplaceMe/>
-    
+
 </template>
 ```
 
@@ -42,7 +42,7 @@ npm install @obewds/replace-me --save-dev
 
 ### Script setup syntax
 
-```html
+```html{3}
 <script setup>
 
     import ReplaceMe from '@obewds/replace-me'
@@ -55,7 +55,7 @@ npm install @obewds/replace-me --save-dev
 
 ### Composition API syntax
 
-```html
+```html{4,9}
 <script>
 
     import { defineComponent } from 'vue'
@@ -89,7 +89,7 @@ npm install @obewds/replace-me --save-dev
 :x: - Doesn't Validate
 
 
-```html
+```html{2}
 <template>
     <ReplaceMe text="My text prop string"/>
 </template>
@@ -115,7 +115,7 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ### default
 
-```html
+```html{2-4}
 <template>
     <ReplaceMe>
         My slot content

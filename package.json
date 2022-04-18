@@ -24,7 +24,7 @@
     "pkg:org": "npm config set scope obewds",
     "pkg:login": "npm adduser",
     "pkg:publish": "npm publish --access public",
-    "publish:prep": "npx rimraf dist && npm run pkg:rollup",
+    "publish:prep": "npx rimraf dist && npm run pkg:rollup && npm run docs:build",
     "publish:package": "npm run publish:prep && npm run pkg:org && npm run pkg:login && npm run pkg:publish"
   },
   "devDependencies": {
