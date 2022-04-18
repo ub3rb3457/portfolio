@@ -1,6 +1,6 @@
 module.exports = {
     base: '/vite-vue-compo-pkg-starter/',
-    title: 'OBE:WDS ReplaceMe',
+    title: 'OBE:WDS',
     description: 'A documentation site for the ReplaceMe component',
     themeConfig: {
         nav: [
