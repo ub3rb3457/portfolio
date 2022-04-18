@@ -20,7 +20,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs --port 8080",
-    "docs:publish": "npm run docs:build && node gh-pages.js",
+    "docs:publish": "npx rimraf gh-pages && npm run docs:build && node gh-pages.js",
     "pkg:rollup": "rollup -c",
     "pkg:org": "npm config set scope obewds",
     "pkg:login": "npm adduser",

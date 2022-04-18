@@ -1,8 +1,9 @@
 const fs = require('fs-extra')
 
 const source = './docs/.vitepress/dist'
-const dest = './docs-site'
+const dest = './gh-pages'
 
-fs.moveSync(source, dest, { overwrite: true })
+fs.copySync(source, dest)
+// fs.moveSync(source, dest, { overwrite: true })
 
 console.log(source + ' files successfully moved to ' + dest)
