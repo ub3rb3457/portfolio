@@ -1,6 +1,13 @@
 <template>
 
-    <p>I am ReplaceMe.vue!</p>
+    <div>
+        <template v-if="text">
+            {{ text }}
+        </template>
+        <template v-else>
+            <slot>ReplaceMe</slot>
+        </template>
+    </div>
 
 </template>
 
@@ -13,9 +20,16 @@
 
         name: 'ReplaceMe',
 
-        components: {},
+        // components: {},
 
-        props: {},
+        props: {
+            text: {
+                type: String,
+                default: '',
+            },
+        },
+
+        // setup(){},
 
     })
 

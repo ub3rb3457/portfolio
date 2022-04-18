@@ -1,6 +1,6 @@
 # vite-vue-compo-pkg-starter
 
-The official OBE:WDS Vite/Vue component starter template with Tailwind CSS, VitePress, Vitest, and more.
+The official OBE:WDS Vite/Vue component package development kit with Tailwind CSS, VitePress and Vitest integrations
 
 # Vue 3 + Vite
 
