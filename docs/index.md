@@ -53,17 +53,12 @@ npm install @obewds/replace-me --save-dev
 
 ```html{4,9}
 <script>
-
     import { defineComponent } from 'vue'
     import ReplaceMe from '@obewds/replace-me'
 
     export default defineComponent({
-        components: {
-            ReplaceMe,
-        },
-        // ...
+        components: { ReplaceMe }
     })
-
 </script>
 ```
 
