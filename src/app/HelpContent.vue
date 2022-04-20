@@ -254,7 +254,7 @@
 
                             <template #label>
                                 <label for="checbox-4-1" :class="checkLabels">
-                                    ./src/ReplaceMe.vue
+                                    <span class="text-black">./src/ReplaceMe.vue &gt;</span> ./src/{{ newCompoName }}.vue
                                 </label>
                             </template>
 
@@ -266,7 +266,7 @@
 
                             <template #label>
                                 <label for="checbox-4-2" :class="checkLabels">
-                                    ./tests/ReplaceMe.test.vue
+                                    <span class="text-black">./tests/ReplaceMe.test.js &gt;</span> ./tests/{{ newCompoName }}.test.js
                                 </label>
                             </template>
 
@@ -556,7 +556,7 @@
     const btnStyle = 'background-color:#42b983;'
     const checkboxClasses = 'focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded'
     const checkLabels = 'text-green-700'
-    const codeClasses = 'bg-gray-100 text-green-800 selection:bg-green-500 selection:text-white px-1'
+    const codeClasses = 'bg-gray-100 text-green-700 selection:bg-green-500 selection:text-white px-1'
     const flexColSect = 'flex flex-col space-y-2'
     const h2Classes = 'text-lg font-bold'
     const imgClasses = 'w-24 mx-auto sm:mx-0'
