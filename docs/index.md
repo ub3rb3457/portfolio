@@ -31,9 +31,7 @@ npm install @obewds/replace-me --save-dev
 
 ```html{3}
 <template>
-
     <ReplaceMe/>
-
 </template>
 ```
 
@@ -44,9 +42,7 @@ npm install @obewds/replace-me --save-dev
 
 ```html{3}
 <script setup>
-
     import ReplaceMe from '@obewds/replace-me'
-
 </script>
 ```
 
@@ -62,13 +58,10 @@ npm install @obewds/replace-me --save-dev
     import ReplaceMe from '@obewds/replace-me'
 
     export default defineComponent({
-
         components: {
             ReplaceMe,
         },
-
         // ...
-
     })
 
 </script>
