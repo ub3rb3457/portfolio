@@ -10,8 +10,6 @@
     <div class="bg-white text-center border-t-2 border-b-2 border-green-500 border-dashed py-24">
 
         <ReplaceMe/>
-        
-        <div class="text-xs italic">(... with the real component for this repo!)</div>
 
     </div>
 

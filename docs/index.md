@@ -6,7 +6,7 @@ head:
 ---
 
 
-# ReplaceMe
+# ReplaceMe.vue
 
 Welcome to the docs page for OBE:WDS's `ReplaceMe.vue` component for [Vue.js](https://vuejs.org/)!
 

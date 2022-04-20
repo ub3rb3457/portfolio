@@ -7,7 +7,7 @@ head:
 
 
 
-# ReplaceMe Component
+# ReplaceMe.vue Component
 
 
 

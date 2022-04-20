@@ -1,4 +1,4 @@
-// ./tests/ReplaceMe.js
+// ./tests/ReplaceMe.test.js
 
 import { mount } from '@vue/test-utils'
 import ReplaceMe from '../src/ReplaceMe.vue'
