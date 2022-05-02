@@ -42,7 +42,7 @@
     "c8": "^7.11.0",
     "fs-extra": "^10.1.0",
     "happy-dom": "^2.55.0",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.13",
     "rimraf": "^3.0.2",
     "rollup": "^2.70.2",
     "rollup-plugin-vue": "^6.0.0",
